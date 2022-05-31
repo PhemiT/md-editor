@@ -8,6 +8,10 @@ const Container = styled.div`
   height: 100%;
   padding: 13px;
 `
+const TitleContainer = styled.div`
+  display: flex;
+  justify-content: flex-start;
+`
 
 const Title = styled.div`
   font-size: 20px;
@@ -16,9 +20,10 @@ const Title = styled.div`
 
 const ResultArea = styled.div`
   width: 100%;
-  height: 100%;
+  height: 300px;
   border: none;
   font-size: 17px;
+  word-wrap: break-word;
 `
 
 const Markdown = () => {
@@ -26,7 +31,9 @@ const Markdown = () => {
 
   return (
     <Container>
+      <TitleContainer>
         <Title>Preview</Title>
+      </TitleContainer>
         <ResultArea>
             <ReactMarkdown children={markdownText} />
         </ResultArea>

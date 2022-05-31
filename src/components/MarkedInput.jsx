@@ -4,8 +4,11 @@ import editorContext from '../editorContext'
 
 const Container = styled.div`
   width: 50%;
-  height: 100%;
-  padding: 13px;
+  height: 300px;
+  padding: 15px;
+  background: #0D1117;
+  border: 0.8px solid #C9D1D9;
+  border-radius: 6px;
 `
 
 const Title = styled.div`
@@ -15,11 +18,13 @@ const Title = styled.div`
 
 const TextArea = styled.textarea`
   width: 100%;
-  height: 100%;
+  min-height: 90%;
   resize: none;
   border: none;
   outline: none;
   font-size: 17px;
+  background-color: #0D1117;
+  color: #C9D1D9;
 `
 
 

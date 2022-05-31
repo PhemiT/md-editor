@@ -16,13 +16,17 @@ const AppContainer = styled.div `
 const Title = styled.div `
   font-size: 25px;
   font-weight: 300;
-  margin: 25px 0;
+  margin: 19px 0;
+  display: flex;
+  align-items: center;
 `
 
 const EditorContainer = styled.div`
-  width: 100%;
+  width: 100vw;
   height: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 `
 
 function App() {
